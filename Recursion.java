@@ -1,29 +1,21 @@
-import java.util.Scanner; // <- added ;
+import java.util.Scanner; 
 
-public class Recursion { // <- added class wrapper
-
-    // Recursive factorial method
+public class Recursion {
     public static int factorial(int n) {
         if (n <= 1)
             return 1;
         return n * factorial(n - 1);
     }
-
-    // Recursive fibonacci method - prints series
     public static void fibonacci(int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(fib(i) + " ");
         }
     }
-
-    // Helper for fibonacci series
     public static int fib(int n) {
         if (n <= 1)
             return n;
         return fib(n - 1) + fib(n - 2);
     }
-
-    // Recursive power method
     public static int power(int x, int y) {
         if (y == 0)
             return 1;
